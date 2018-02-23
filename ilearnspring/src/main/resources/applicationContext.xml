@@ -8,7 +8,7 @@
 	<context:component-scan base-package="com.programcreek.examples" />
  
 	<bean id="objectType" class="org.anjaneya.ilearnspring.ObjectType">
-	<property name="objectName" value="Triangle"></property>
+	<property name="objectName" value="Circle"></property>
 	<property name="pointA" ref="point1"></property>
 	<property name="pointB" ref="point2"></property>
 	<property name="pointC" ref="point3"></property>
