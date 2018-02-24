@@ -9,6 +9,7 @@ public class BuildObject {
 		
 		@SuppressWarnings("resource")
 		AbstractApplicationContext context= new ClassPathXmlApplicationContext("applicationContext.xml");
+		//AbstractApplicationContext is used here to register shutdown hook as it is standalone application, in which not required in web application
 		context.registerShutdownHook();
 		Shape shape= (Shape)context.getBean("objectType");
 		shape.draw();
